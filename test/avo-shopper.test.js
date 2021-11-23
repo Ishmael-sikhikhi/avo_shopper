@@ -13,8 +13,8 @@ const pool = new Pool({
 describe('The avo shopper', function () {
 
     beforeEach(async function () {
-        // await pool.query(`delete from avo_deal;`)    
-        // await pool.query(`delete from shop;`)    
+        await pool.query(`delete from avo_deal;`)    
+        await pool.query(`delete from shop;`)    
     });
 
     it('should be able to create a shop', async function () {
