@@ -1,0 +1,22 @@
+<h2>Best deals</h2>
+
+<div class="container">
+ 
+{{#each deals}}
+
+ <ul>
+     <li class="btn">{{shop_name}} <br>
+         <img src="download.jpeg" style="width: 8%;" alt="sale"> {{qty}}  for R{{price}}, each for
+          R{{unit_price}}</li>
+ </ul>
+ 
+{{/each}}
+
+<br>
+<a class="btn btn-success" href="/shops">View shops</a>
+<a class="btn btn-warning" href="/shop-deals">Deals</a>
+<a class="btn btn-danger" href="/add-shop">Add shops</a>
+<a class="btn btn-danger" href="/add-shop-deals">Add deals</a>
+</div>
+
+

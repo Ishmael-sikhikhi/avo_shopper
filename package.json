@@ -1,0 +1,26 @@
+{
+  "name": "avo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "npm test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^6.0.1",
+    "express-session": "^1.17.2",
+    "mocha": "^9.1.3",
+    "pg": "^8.7.1",
+    "save-dev": "0.0.1-security"
+  }
+}

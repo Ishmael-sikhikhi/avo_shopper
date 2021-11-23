@@ -1,0 +1,23 @@
+<h2>The deals</h2>
+
+<div class="shopDeals">
+    <form action="/shop-deals" method="POST">
+
+        <select name="name" id="{{id}}">
+            {{#each shops}}
+            <option value="{{id}}" name="{{name}}">{{name}}</option>
+            {{/each}}
+        </select>
+
+        {{#each deals}}
+        <ul>
+            <li>{{qty}} for {{price}}</li>
+        </ul>
+        {{/each}}
+        <br>
+        <div class="d-flex">
+        <button type="submit" class="btn btn-success m-4">Show deals</button>
+    </form>
+
+    <a class="btn btn-danger m-4" href="/">Home</a>
+</div>

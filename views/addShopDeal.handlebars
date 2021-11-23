@@ -1,0 +1,25 @@
+<h2>Add new deals</h2>
+
+<div class="deal container">
+    <label for="cars">Choose a shop:</label>
+
+    <form action="/add-shop-deals" method="post">
+        <select name="name" id="{{id}}">
+            {{#each shops}}
+            <option value="{{id}}" name="{{name}}">{{name}}</option>
+            {{/each}}
+        </select>
+        <div class="error text-center text-danger">
+            {{messages.error}}
+        </div>
+        <br>
+        <label for="qty">Quantity</label><input style="margin-left: 10px;" type="number" value="0" name="qty">
+        <br>
+        <label for="price">Price</label><input style="margin-left: 10px;" type="float" value="0.00" name="price" placeholder="1 or 1.00">
+        <br>
+        <div class="d-flex">
+        <button type="submit" class="btn btn-success m-4">Add deal</button>
+    </form>
+
+    <a class="btn btn-danger m-4" href="/">Home</a>
+</div>
